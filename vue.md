@@ -13,7 +13,8 @@ vue2 和 vue3 对比
 hash 模式 和 history 模式
 hash 模式是通过 hash 值来实现路由跳转，history 模式是通过 HTML5 的 history 接口来实现路由跳转。
 hash 模式的 URL 中包含 #，history 模式的 URL 中不包含 #。
-hash 模式兼容性好，seo 效果较差，history 模式需要服务端支持,seo 效果较好。
+hash 模式兼容性好，seo 效果较差，history 模式需要服务端支持,seo 效果较好。  
+history 模式需要后端配置，是因为浏览器会把 SPA 的路由当作真实文件路径去请求服务器，比如用户访问 /dashboard，浏览器会直接向服务器请求这个路径，但 SPA 实际上只有一个 index.html，所以会返回 404。解决方案是：让服务器将所有前端路由重定向到 index.html，让 Vue Router 接管路由解析。
 
 虚拟 dom 和 diff 算法
 
