@@ -69,9 +69,9 @@ https
 数据完整性：数字签名，防止数据被篡改
 
 cookie 和 session 区别  
-cookie 存放在客户端 session 存放在服务端
-单个 cookie 存储容量为 4k session 没有上限
-cookie 对客户端可见的 session 是透明的
-cookie 和 session 有效期不同
-cookie 支持跨域访问 session 不支持跨域访问
+cookie 存放在客户端 session 存放在服务端  
+单个 cookie 存储容量为 4k session 没有上限  
+cookie 对客户端可见的 session 是透明的  
+cookie 和 session 有效期不同  
+cookie 支持跨域访问 session 不支持跨域访问  
 现代 web 应用 session 用得少，一般采用 jwt 较多
