@@ -70,7 +70,9 @@ ES6 新特性
 
 new 一个对象的具体过程
 
-promise 相关
+promise.all promise.race promise.allSettled  
+Promise.all：全部成功才成功，一个失败就立即失败
+Promise.allSettled：不管成功失败，都等全部完成
 
 async/await 相关
 
