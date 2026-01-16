@@ -94,4 +94,7 @@ ts interface，type 区别
 必须用 Type 的场景：联合类型（'a' | 'b'）、元组、映射类型、条件类型  
 对象类型优先用 Interface，复杂类型用 Type，组件 Props 根据复杂度选择。”
 
-ts 泛型
+ts 特点
+
+ts 新增数据类型  
+enum tuple void never any unknown 等
