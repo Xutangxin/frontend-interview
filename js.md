@@ -91,7 +91,8 @@ ts interface，type 区别
 第二，设计目标不同：Interface 强调契约，适合定义对象形状和类实现；Type 是类型别名，适合定义联合类型、元组等复杂类型。  
 第三，使用场景不同：
 必须用 Interface 的场景：类实现（implements）、扩展第三方库类型  
-必须用 Type 的场景：联合类型（'a' | 'b'）、元组、映射类型、条件类型  
+必须用 Type 的场景：联合类型（'a' | 'b'）、元组、映射类型（type list =[number, string]）、条件类型  
+interface只能定义对象类型，不能定义基本类型（如 number、string 等）。type 可以定义基本类型，也可以定义对象类型。
 对象类型优先用 Interface，复杂类型用 Type，组件 Props 根据复杂度选择。”
 
 ts 特点
