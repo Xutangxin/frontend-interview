@@ -99,3 +99,10 @@ ts 特点
 
 ts 新增数据类型  
 enum tuple void never any unknown 等
+
+ts工具类型  
+Partial<T> - 所有属性变为可选  
+Required<T> - 所有属性变为必填  
+Readonly<T> - 所有属性变为只读  
+Pick<T, K> - 从类型中选择部分属性  
+Omit<T, K> - 从类型中排除部分属性
