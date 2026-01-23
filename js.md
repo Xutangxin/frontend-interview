@@ -86,6 +86,14 @@ event loop，宏任务，微任务
 
 事件冒泡，事件捕获，事件流，事件委托
 
+如何实现浅拷贝  
+对象：
+Object.assign()  
+数组：  
+展开运算符（...）  
+Array.prototype.slice()  
+其他内置对象：structuredClone
+
 ts interface，type 区别  
 第一，扩展性不同：Interface 通过 extends 继承，支持声明合并（同名接口自动合并）。Type 通过 & 交叉类型扩展，但不能合并。  
 第二，设计目标不同：Interface 强调契约，适合定义对象形状和类实现；Type 是类型别名，适合定义联合类型、元组等复杂类型。  

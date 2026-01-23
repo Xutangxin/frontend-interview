@@ -23,8 +23,7 @@ async 下载完成后立即执行
 defer DOM 解析完成后，DOMContentLoaded 之前执行
 
 canvas 和 svg 的区别  
-canvas 依赖分辨率，缩放后模糊  
-svg 不依赖分辨率，放大不模糊
+![alt text](imgs/image2.png)
 
 xss 和 csrf  
 XSS（跨站脚本攻击）：攻击者通过在网页中注入恶意脚本，窃取用户信息  

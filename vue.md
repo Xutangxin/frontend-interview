@@ -30,4 +30,7 @@ v-if 和 v-show 区别
 
 computed 和 watch 区别
 
+nextTick和setTimeout区别
+nextTick优先使用微任务实现，优先级高于 setTimeout。setTimeout不能保证dom更新完成，nextTick可以。
+
 vue3 相关
