@@ -8,15 +8,15 @@ mvc 和 mvvm
 "MVC 是传统的分层架构，用户操作由 Controller 处理，然后更新 Model，最后 Controller 通知 View 重新渲染。需要手动更新视图，适合后端应用。
 MVVM 是前端数据驱动架构，核心是数据双向绑定。ViewModel 作为中间层，通过响应式系统自动同步 View 和 Model。数据变化时视图自动更新，大大减少了 DOM 操作，适合复杂交互的前端应用
 
-vue2 和 vue3 对比
-响应式原理  
-性能  
-composition api  
-hook  
-teleport  
-ts 支持
+vue3有哪些升级之处  
+响应式性能提升：Object.defineProperty → Proxy，性能提升 30%+，支持新增/删除属性、Map/Set 原生监听  
+composition api：告别options api地狱  
+hook：更先进的逻辑复用解决方案，解决了 options api 中 mixin 存在的问题，如命名冲突、逻辑重复等。  
+tree shaking：生产包体积比vue2小  
+teleport：更方便的组件渲染位置控制，解决了组件渲染位置受父元素影响的问题。  
+ts 支持：Vue 3 全面支持 TypeScript，提供了更好的类型检查和智能提示。
 
-组件通信
+组件之间如何通信
 
 hash 模式 和 history 模式  
 hash 模式是通过 hash 值来实现路由跳转，history 模式是通过 HTML5 的 history 接口来实现路由跳转。  
@@ -32,5 +32,3 @@ computed 和 watch 区别
 
 nextTick和setTimeout区别
 nextTick优先使用微任务实现，优先级高于 setTimeout。setTimeout不能保证dom更新完成，nextTick可以。
-
-vue3 相关
