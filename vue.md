@@ -39,3 +39,10 @@ vue是渐进式框架，react是专注于ui的库
 编写方式：vue 使用模板（更像 HTML）；React 使用 JSX（JavaScript 为中心）  
 逻辑复用：vue使用组合式api，react使用hooks  
 生态：vue->nuxt，react->nextjs
+
+vue的组成：
+
+1. 响应式系统：数据变化自动更新视图
+2. 虚拟dom与渲染器：高效更新ui，跨平台渲染
+3. 模板编译器：将模板编译为渲染函数
+4. 组件系统：单文件组件
